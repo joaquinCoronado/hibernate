@@ -4,6 +4,7 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.OrderBy;
 import javax.persistence.Table;
 
 @Entity
@@ -14,6 +15,7 @@ public class Maestro {
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
 	private int idMaestro;
 	
+	@OrderBy
 	private String nombre;
 	
 	
